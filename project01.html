@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iCoder-heaven for programmers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Playfair+Display:ital,wght@0,600;1,400&family=REM:ital,wght@1,300&family=Source+Sans+3:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      
+      .carousel-inner img {
+        /* opacity: 0.8; */
+        height: 350px;
+        width: 100%;
+      }
+      .carousel-inner p,
+      h5 {
+        /* font-size: 18px; */
+        font-weight: bold;
+        font-family: "REM", sans-serif;
+      }
+      #card-section{
+        background-color:rgb(232, 226, 226);
+        flex-direction: column;
+      }
+      .cards{
+        display: flex;
+        padding: 10px 10px;
+        margin:10px 50px;
+        justify-content: center;
+        align-items: center;
+      }
+      .cards img{
+        width:1005;
+        height: 180px;
+      }
+      .card-body button{
+        font-weight: bold;
+        font-family: "REM", sans-serif;
+        display:block;
+        margin: auto;
+      }
+      
+      .card{
+        margin:20px 40px;
+        box-shadow: 6px 6px 4px gray;
+        /* border: 1px solid black; */
+      }
+      .carousel-caption{
+        color:black;
+      }
+      
+      footer{
+        text-align: center;
+        background-color: rgb(96, 94, 94);
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">iCoder</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Web-development</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Android-development</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Explore more...</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://t3.ftcdn.net/jpg/04/49/74/10/360_F_449741015_7wFz1d5e1voLD3arDjsyST3TtQkZAhg6.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to iCoder</h5>
+            <p>
+              Dive deep into the world of Technology! <br />
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Modern Technology</h5>
+            <p>
+              Learn Web-development, Android-development, Datascience,
+              Blockchain and much more.
+            </p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Best Content quality</h5>
+            <p>
+              Amazing learning platform with trained tutors and best content
+              quality
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+     <section id="card-section">
+    <div class="cards">
+    <div class="card" style="width: 18rem;">
+      <img src="https://miro.medium.com/v2/resize:fit:1200/0*M4bxiCIjcTK-2Xr6.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+       </p>
+       <br><button type="button" class="btn btn-outline-secondary">
+        Web-development
+      </button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://riseuplabs.com/wp-content/uploads/2021/07/mobile-application-development-guidelines-riseuplabs.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+          <br></p>
+          <button type="button" class="btn btn-outline-secondary">Technology</button>
+          
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2019/09/11134058/What-is-data-science-2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-outline-secondary">
+            App-development
+          </button>
+          
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://www.cyberbahnit.com/wp-content/uploads/2017/11/blockchain.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">
+          </p>
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+          <button type="button" class="btn btn-outline-secondary">
+            Blockchain
+          </button>
+          
+      </div>
+    </div>
+    </section>
+
+    <div class="about">
+      
+    </div>
+
+    <footer>
+      <div class="center">
+          Copyright &copy; www.iCoder.com. All rights reserved
+      </div>
+  </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
